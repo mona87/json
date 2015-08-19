@@ -46,7 +46,6 @@ $(document).ready(function(){
 			else {
 				//transverse through the DOM to find all list-items, re-populate the array,update index, and save it as a string
 				$('.list-item').each(function(index, object){
-
 					list.push($(this).find('.item-val').text());
 					$(this).find('.index').html((index +1)+'.');
 					str += '<div class="list-item">'+ $(this).html() + '</div>';
